@@ -1,0 +1,9 @@
+C:\Users\Luna\Desktop\ASM\BufferMaker\BufferMaker\bin\Debug\BufferMaker.exe.config
+C:\Users\Luna\Desktop\ASM\BufferMaker\BufferMaker\bin\Debug\BufferMaker.exe
+C:\Users\Luna\Desktop\ASM\BufferMaker\BufferMaker\bin\Debug\BufferMaker.pdb
+C:\Users\Luna\Desktop\ASM\BufferMaker\BufferMaker\obj\Debug\BufferMaker.csprojResolveAssemblyReference.cache
+C:\Users\Luna\Desktop\ASM\BufferMaker\BufferMaker\obj\Debug\BufferMaker.BufferMaker.resources
+C:\Users\Luna\Desktop\ASM\BufferMaker\BufferMaker\obj\Debug\BufferMaker.Properties.Resources.resources
+C:\Users\Luna\Desktop\ASM\BufferMaker\BufferMaker\obj\Debug\BufferMaker.csproj.GenerateResource.Cache
+C:\Users\Luna\Desktop\ASM\BufferMaker\BufferMaker\obj\Debug\BufferMaker.exe
+C:\Users\Luna\Desktop\ASM\BufferMaker\BufferMaker\obj\Debug\BufferMaker.pdb

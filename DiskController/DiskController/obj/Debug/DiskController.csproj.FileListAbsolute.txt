@@ -1,0 +1,9 @@
+C:\Users\Luna\Desktop\ASM\DiskController\DiskController\bin\Debug\DiskController.exe.config
+C:\Users\Luna\Desktop\ASM\DiskController\DiskController\obj\Debug\DiskController.csprojResolveAssemblyReference.cache
+C:\Users\Luna\Desktop\ASM\DiskController\DiskController\obj\Debug\DiskController.DiskController.resources
+C:\Users\Luna\Desktop\ASM\DiskController\DiskController\obj\Debug\DiskController.Properties.Resources.resources
+C:\Users\Luna\Desktop\ASM\DiskController\DiskController\obj\Debug\DiskController.csproj.GenerateResource.Cache
+C:\Users\Luna\Desktop\ASM\DiskController\DiskController\bin\Debug\DiskController.exe
+C:\Users\Luna\Desktop\ASM\DiskController\DiskController\bin\Debug\DiskController.pdb
+C:\Users\Luna\Desktop\ASM\DiskController\DiskController\obj\Debug\DiskController.exe
+C:\Users\Luna\Desktop\ASM\DiskController\DiskController\obj\Debug\DiskController.pdb
