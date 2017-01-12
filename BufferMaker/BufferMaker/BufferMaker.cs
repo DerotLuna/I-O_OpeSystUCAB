@@ -21,6 +21,7 @@ namespace BufferMaker
             InitializeComponent();
             controllerOption.Items.Add("Tape"); controllerOption.Items.Add("Disk");
             actionOption.Items.Add("Create"); actionOption.Items.Add("Read"); actionOption.Items.Add("Modify"); actionOption.Items.Add("Delete");
+            formatOption.Items.Add(".txt"); formatOption.Items.Add(".xml"); formatOption.Items.Add(".json"); 
             this.root = route;
         }
 
@@ -49,10 +50,9 @@ namespace BufferMaker
             else
             {
                 valid = false;
-                print_Error = "Select a controller.";
-            }
+                print_Error = "Select a controller.\n";
+            }        
 
-            
             if (actionOption.SelectedItem != null)
             {
                 switch (actionOption.SelectedItem.ToString())
@@ -74,34 +74,41 @@ namespace BufferMaker
             else
             {
                 valid = false;
-                print_Error = print_Error + " Select a action.";
+                print_Error = print_Error + "Select a action. \n";
             }
 
 
             if (textRoute.TextLength == 0)
             {
                 valid = false;
-                print_Error = print_Error + " Direction/Route Empty.";
+                print_Error = print_Error + "Direction/Route Empty.\n";
             }
             if (textFileName.TextLength == 0)
             {
                 valid = false;
-                print_Error = print_Error + " File Name empty.";
+                print_Error = print_Error + "File Name empty. \n";
             }
+
+            if (formatOption.SelectedItem == null)
+            {
+                valid = false;
+                print_Error = print_Error + "Select a format. \n";
+            }
+
             if (textContent.TextLength == 0)
             {
                 valid = false;
-                print_Error = print_Error + " Content empty.";
+                print_Error = print_Error + "Content empty.";
             }
 
             if (valid)
             {
                 Archive archive = new Archive();
-                bool confirmation = archive.create_Buffer(root + save, action, textRoute.Text, textFileName.Text, textContent.Text);
-                if (confirmation) textContent.Text = "Archive " + textFileName.Text + " created";
-                else textContent.Text = "Archive " + textFileName.Text + " not created, the 'File Name' is exists";
+                bool confirmation = archive.create_Buffer(root + save, action, textRoute.Text, textFileName.Text + formatOption.SelectedItem.ToString(), textContent.Text);
+                if (confirmation) informant.Text = "Archive " + textFileName.Text + " created";
+                else informant.Text = "Archive " + textFileName.Text + " not created, the 'File Name' is exists";
             }
-            else textContent.Text = print_Error;
+            else informant.Text = print_Error;
         }
     }
 }
