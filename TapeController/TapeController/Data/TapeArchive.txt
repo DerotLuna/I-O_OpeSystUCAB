@@ -1,0 +1,1 @@
+juan.txt&tete&hola~PruebaCrear&Desktop&Hoy es un buen dia~Modify.txt&c:\desktop&He modificado el archivo Modify~Read.txt&c:\desktop&Este Contenido es el que se leera~Create.txt&c:\desktop&He creado~
