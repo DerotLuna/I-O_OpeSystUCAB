@@ -13,7 +13,7 @@ namespace BufferMaker
     public partial class BufferMaker : Form
     {
         string root;
-        private static string TAPE = "\\TapeController\\TapeController\\Data";
+        private static string TAPE = "\\TapeController\\TapeController\\Data\\FilesAvailable";
         private static string DISK = "\\DiskController\\DiskController\\Data";
 
         public BufferMaker(string route)
@@ -104,7 +104,7 @@ namespace BufferMaker
             if (valid)
             {
                 Archive archive = new Archive();
-                bool confirmation = archive.create_Buffer(root + save, action, textRoute.Text, textFileName.Text + formatOption.SelectedItem.ToString(), textContent.Text);
+                bool confirmation = archive.create_Buffer(root + save, action, textRoute.Text, textFileName.Text, formatOption.SelectedItem.ToString(), textContent.Text);
                 if (confirmation) informant.Text = "Archive " + textFileName.Text + " created";
                 else informant.Text = "Archive " + textFileName.Text + " not created, the 'File Name' is exists";
             }

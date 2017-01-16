@@ -11,11 +11,11 @@ namespace BufferMaker
     {
         private static string FILES_AVAILABLE = "\\filesAvailable.txt";
 
-        public bool create_Buffer(string save, char action, string internal_Route, string file_Name, string content)
+        public bool create_Buffer(string save, char action, string internal_Route, string file_Name, string format, string content)
         {
             if (!File.Exists(save + "\\" + file_Name + ".txt"))
             {
-                string line_Save = action + "&" + internal_Route + "&" + file_Name + "&" + content;
+                string line_Save = action + "&" + internal_Route + "&" + file_Name + format + "&" + content;
 
                 TextWriter archive = new StreamWriter(save + "\\" + file_Name + ".txt");
                 archive.Write(line_Save);
@@ -46,6 +46,7 @@ namespace BufferMaker
 
         public void add_FilesAvailable(string save,string file_Name)
         {
+            save = save.Replace("\\FilesAvailable", "");
             if (File.Exists(save + FILES_AVAILABLE))
             {
                 string content = get_Content(save + FILES_AVAILABLE) + "&";
